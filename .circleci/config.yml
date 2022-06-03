@@ -24,7 +24,7 @@ jobs:
       - checkout
       - run:
           name: "Print hello"
-          command: "echo hello, CI!"
+          command: echo ${CIRCLE_BRANCH}
     
 
 # Invoke jobs via workflows
